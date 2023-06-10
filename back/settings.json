@@ -1,0 +1,6 @@
+{
+    "serverPort": 3030,
+    "databaseIP": "127.0.0.1",
+    "databasePort": 4050,
+    "databaseName": "starsdb"
+}

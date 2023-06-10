@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta name="description" content="An app to simulate and play around with night sky">
+        <meta name="keywords" content="project,app,night,sky,simulate">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="classes/cloud.js"></script>
+        <script defer src="classes/star.js"></script>
+        <script defer src="classes/constellation.js"></script>
+        <script defer src="index.js"></script>
+        <title>Night Sky Simulate</title>
+    </head>
+    <body>
+        <h1 id="title">Night Sky Simulation</h1>
+        <div id="main">
+            <form id="details" class="side-panel">
+                <span id="details" class="title">Details</span>
+                <span>
+                    <input type="input" id="star-id-inp" hidden>
+                    <input type="input" id="star-name-inp">
+                    <label for="star-name-inp">Star Name</label>
+                </span>
+                <span>
+                    <input type="input" id="constellation-name-inp">
+                    <label for="constellation-name-inp">Constellation</label>
+                </span>
+                <input type="button" id="update-star-btn" value="Update">
+            </form>
+            <canvas id="sky-canvas">
+            </canvas>
+            <form id="settings" class="side-panel">
+                <span id="settings" class="title">Settings</span>
+                <span>
+                    <input type="checkbox" id="constellation-mode-btn">
+                    <label for="constellation-mode-btn">Constellation/Select Mode</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="delete-mode-btn">
+                    <label for="delete-mode-btn">Delete Mode</label>
+                </span>
+                <span>
+                    <input type="number" id="cloud-count-input" min="1" max="10">
+                    <label for="cloud-count-input">Cloud Count</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="enable-clouds-btn">
+                    <label for="enable-clouds-btn">Enable Clouds</label>
+                </span>
+                <span>
+                    <input type="range" id="moon-phase-range" min="0" max="4" step="1">
+                    <label for="moon-phase-range">Moon Phase</label>
+                </span>
+            </form>
+        </div>
+    </body>
+</html>
